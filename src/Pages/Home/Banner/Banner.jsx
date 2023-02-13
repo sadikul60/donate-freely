@@ -11,8 +11,8 @@ const Banner = () => {
                 </div>
                 <div className='p-8'>
                     <h1 className='text-green-600 text-3xl lg:text-5xl font-bold mb-10'>Let’s Help Those Who Are More In Need</h1>
-                    <p className='text-justify text-[20px]'>In its simplest form, Crowdfunding is a practice of giving monetary funds to overcome specific social, cultural, or economic hurdles individuals face in their daily lives.</p>
-                    <Link className='btn btn-primary mt-6'>Donate Now</Link>
+                    <p className='text-justify text-[20px] mb-6'>In its simplest form, Crowdfunding is a practice of giving monetary funds to overcome specific social, cultural, or economic hurdles individuals face in their daily lives.</p>
+                    <Link className='outline outline-black text-[20px] font-semibold hover:text-white hover:bg-green-600 text-center py-2 px-3  rounded'>Donate Now</Link>
                 </div>
            </div>
         </div>
