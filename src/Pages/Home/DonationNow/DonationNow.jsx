@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import donationImg from "../../../assets/images/donation8.jpg"
+import { motion } from 'framer-motion';
 
 const DonationNow = () => {
     return (
         <div>
-            <section className='bg-green-300 lg:w-7/12 lg:mx-auto lg:relative lg:mt-[-80px] my-8 hidden lg:block'>
+            <motion.section animate={{ y: [null, 100, 0] }} className='bg-green-300 lg:w-7/12 lg:mx-auto lg:relative lg:mt-[-100px] my-8 hidden lg:block'>
                 <div className='lg:flex lg:items-center center pt-8 lg:pt-0 '>
                     <Link className='lg:w-3/12 lg:ml-5 outline outline-red-600 text-[20px] font-semibold hover:text-red-600 hover:bg-white text-center py-2 rounded'>Donate now</Link>
                     <div className='lg:w-8/12 mx-5'>
@@ -14,7 +15,7 @@ const DonationNow = () => {
                     </div>
                     <img className='lg:w-44 lg:h-40' src={donationImg} alt="" />
                 </div>
-            </section>
+            </motion.section>
             <section className='bg-green-300 lg:w-7/12 lg:mx-auto lg:relative lg:mt-[-80px] my-8 lg:hidden'>
                 <div className='lg:flex lg:items-center center pb-12 '>
                     <img className='lg:w-44 lg:h-40' src={donationImg} alt="" />

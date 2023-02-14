@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='bg-blue-300'>
             <footer className="footer footer-center p-10 ">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 text-2xl text-gray-700 font-semibold">
-                    <Link className="link link-hover">About us</Link>
+                    <a href="/https://www.ketto.org/" className="link link-hover">About us</a>
                     <Link className="link link-hover">Contact</Link>
                     <Link className="link link-hover">Jobs</Link>
                     <Link className="link link-hover">Press kit</Link>
