@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const DonationNow = () => {
     return (
-        <div>
+        <div className='bg-green-100 pb-12'>
             <motion.section 
                 initial={{ x: '100vw'}}
                 animate={{x: 0}}
@@ -20,7 +20,7 @@ const DonationNow = () => {
                     <img className='lg:w-44 lg:h-40' src={donationImg} alt="" />
                 </div>
             </motion.section>
-            <section className='bg-green-300 lg:w-7/12 lg:mx-auto lg:relative lg:mt-[-80px] my-8 lg:hidden'>
+            <section className='bg-green-300 lg:w-7/12 lg:mx-auto lg:relative lg:mt-[-80px] mb-8 lg:hidden'>
                 <div className='lg:flex lg:items-center center pb-12 '>
                     <img className='lg:w-44 lg:h-40' src={donationImg} alt="" />
                     <div className='lg:w-8/12 mx-5 mt-8'>

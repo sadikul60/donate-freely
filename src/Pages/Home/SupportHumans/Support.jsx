@@ -3,7 +3,7 @@ import supportH from "../../../assets/images/supportH.jpg"
 
 const Support = () => {
     return (
-        <div className='mb-20'>
+        <div className='bg-[#d4fcfd] py-14'>
             <div className='text-center'>
                 <h2 className='text-3xl text-green-600 font-bold'>Support Humans</h2>
                 <p className='md:w-3/4 md:mx-auto pb-8 text-[20px]'>A little support from you means a lot to them. So come, we willingly stand by them. Help them in danger.</p>
