@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 const DonatePlan = () => {
     
     return (
-        <div className='bg-blue-100 py-14'>
+        <div className='bg-green-100 py-14'>
             <section className='container mx-auto'>
                 <div className='text-center'>
                     <h2 className='text-3xl text-green-600 font-bold'>Our Donate Plan</h2>
