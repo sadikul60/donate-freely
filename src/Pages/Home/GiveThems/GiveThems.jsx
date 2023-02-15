@@ -38,63 +38,63 @@ const GiveThems = () => {
                         modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={donation0}
-                            alt="donation0"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={donation1}
-                            alt="donation1"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={donation2}
-                            alt="donation2"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={donation3}
-                            alt="donation3"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={donation4}
-                            alt="donation4"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={donation5}
-                            alt="donation5"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={donation6}
-                            alt="donation6"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={donation7}
-                            alt="donation7"
-                        />
-                    </SwiperSlide>
-                </Swiper>
+                        <SwiperSlide>
+                            <img
+                                className="object-fill w-full h-96"
+                                src={donation0}
+                                alt="donation0"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img
+                                className="object-fill w-full h-96"
+                                src={donation1}
+                                alt="donation1"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img
+                                className="object-fill w-full h-96"
+                                src={donation2}
+                                alt="donation2"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img
+                                className="object-fill w-full h-96"
+                                src={donation3}
+                                alt="donation3"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img
+                                className="object-fill w-full h-96"
+                                src={donation4}
+                                alt="donation4"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img
+                                className="object-fill w-full h-96"
+                                src={donation5}
+                                alt="donation5"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img
+                                className="object-fill w-full h-96"
+                                src={donation6}
+                                alt="donation6"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img
+                                className="object-fill w-full h-96"
+                                src={donation7}
+                                alt="donation7"
+                            />
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
                 <div className='pl-8 pt-12 xl:pt-28 text-center'>
                     <h2 className='text-3xl text-green-600 font-bold'>Give Someone’s Life By Giving Of Yours</h2>
