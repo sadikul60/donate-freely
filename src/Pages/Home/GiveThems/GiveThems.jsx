@@ -23,7 +23,7 @@ const GiveThems = () => {
     return (
         <div className='bg-[#d4fcfd] py-14 items-center'>
             <section className='grid grid-cols-1 xl:grid-cols-2'>
-                <div>
+                <div className='xl:ml-8'>
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}

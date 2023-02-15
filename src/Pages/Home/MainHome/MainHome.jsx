@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import DonateFreely from '../DonateFreely/DonateFreely';
 import DonatePlan from '../DonatePlan/DonatePlan';
 import DonationNow from '../DonationNow/DonationNow';
 import GiveThems from '../GiveThems/GiveThems';
@@ -15,6 +16,7 @@ const MainHome = () => {
             <Support />
             <GiveThems />
             <MVC />
+            <DonateFreely />
         </div>
     );
 };
