@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-slate-300">
-            <div className="navbar-start">
+        <div className="navbar bg-slate-300 fixed top-0">
+            <div className="navbar-start relative">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
                     Menu
@@ -25,6 +25,7 @@ const Navbar = () => {
                 </li>
                 <li><Link>How It Works</Link></li>
                 <li><Link>Start a Fundraise</Link></li>
+                <li><Link>Chat</Link></li>
                 <li><Link>LogIn</Link></li>
                 </ul>
                 </div>
