@@ -10,7 +10,7 @@ const DonationNow = () => {
                 initial={{ x: '100vw'}}
                 animate={{x: 0}}
                 transition={{type: 'spring', delay: 0.5}}
-                className='bg-green-300 lg:w-7/12 lg:mx-auto lg:relative lg:mt-[-100px] my-8 hidden lg:block'>
+                className='bg-green-300 lg:w-7/12 lg:mx-auto lg:relative lg:mt-[-100px] my-8 hidden xl:block'>
                 <div className='lg:flex lg:items-center center pt-8 lg:pt-0 '>
                     <Link className='lg:w-3/12 lg:ml-5 outline outline-red-600 text-[20px] font-semibold hover:text-red-600 hover:bg-white text-center py-2 rounded'>Donate now</Link>
                     <div className='lg:w-8/12 mx-5'>

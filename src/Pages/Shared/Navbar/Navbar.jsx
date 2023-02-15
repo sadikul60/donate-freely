@@ -54,7 +54,7 @@ const Navbar = () => {
                 <li><Link>How It Works</Link></li>
                 </ul>
             </div>
-            <div className="navbar-end hidden lg:block">
+            <div className="navbar-end hidden xl:block">
                 <Link className="outline outline-green-600 px-4 py-2 rounded-md mr-4">
                     <span className='font-bold text-green-600 uppercase'>Chat</span>
                 </Link>

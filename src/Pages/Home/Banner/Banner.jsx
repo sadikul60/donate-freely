@@ -5,7 +5,7 @@ import BannerImg from "../../../assets/images/header.jpg"
 const Banner = () => {
     return (
         <div className='my-12'>
-           <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8'>
+           <div className='container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8'>
                 <div className='mt-2'>
                     <img className='w-full md:rounded-md shadow-lg md:p-2' src={BannerImg} alt="" />
                 </div>
