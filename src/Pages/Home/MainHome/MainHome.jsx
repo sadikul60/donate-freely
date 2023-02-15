@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import ContactUs from '../ContactUs/ContactUs';
 import DonateFreely from '../DonateFreely/DonateFreely';
 import DonatePlan from '../DonatePlan/DonatePlan';
 import DonationNow from '../DonationNow/DonationNow';
@@ -19,6 +20,7 @@ const MainHome = () => {
             <MVC />
             <DonateFreely />
             <SuccessStories />
+            <ContactUs />
         </div>
     );
 };
