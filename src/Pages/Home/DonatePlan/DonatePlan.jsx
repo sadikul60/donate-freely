@@ -15,6 +15,7 @@ const DonatePlan = () => {
             <section className='container mx-auto'>
                 <div className='text-center'>
                     <h2 className='text-3xl text-green-600 font-bold'>Our Donate Plan</h2>
+                    <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
                     <p className='md:w-3/4 md:mx-auto pb-8 text-[20px]'>A donation plan, also known as a giving plan or philanthropic plan, is a structured approach to making charitable contributions. It involves setting specific goals for giving and determining the best ways to allocate funds to different causes or organizations.</p>
                 </div>
 

@@ -1,11 +1,13 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
+import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 const ContactUs = () => {
     return (
         <div className='bg-[#d4fcfd] py-14'>
-            <h2 className='text-3xl text-green-600 font-semibold text-center mb-8'>Get In Touch</h2>
+            <h2 className='text-3xl text-green-600 font-semibold text-center'>Get In Touch</h2>
+            <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
             <section>
                 <div className='text-center'>
                         <div className="mx-6 xl:mx-auto z-10 rounded-lg grid grid-cols-1 xl:grid-cols-3 px-12 md:px-20 gap-6 ">
@@ -42,9 +44,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="flex justify-center items-center mt-5 w-full">
-                    <button className="outline outline-black text-[20px] font-semibold hover:text-white hover:bg-green-600 text-center py-2 px-3  rounded">
-                        <input type="submit" value="Send Message" />
-                    </button>
+                        <PrimaryButton><input type="submit" value="Send Message" /></PrimaryButton>
                     </div>
                 </div>
             </section>

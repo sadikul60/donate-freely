@@ -18,6 +18,7 @@ import donation4 from "../../../assets/images/donation10.jpg"
 import donation5 from "../../../assets/images/donation11.jpg"
 import donation6 from "../../../assets/images/donation5.jpg"
 import donation7 from "../../../assets/images/donation6.jpg"
+import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 const GiveThems = () => {
     return (
@@ -99,7 +100,7 @@ const GiveThems = () => {
                 <div className='pl-8 pt-12 xl:pt-28 text-center'>
                     <h2 className='text-3xl text-green-600 font-bold'>Give Someone’s Life By Giving Of Yours</h2>
                     <p className='pb-8 text-[20px] pt-6'>A little support from you means a lot to them. So come, we willingly stand by them. Help them in danger.</p>
-                    <Link className='outline outline-black text-[20px] font-semibold hover:text-white hover:bg-green-600 text-center py-2 px-3  rounded'>Start a Fundraise</Link>
+                    <PrimaryButton>Start a Fundraise</PrimaryButton>
                 </div>
             </section>
         </div>

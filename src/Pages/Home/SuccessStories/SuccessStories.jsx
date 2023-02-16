@@ -18,7 +18,8 @@ import donation5 from "../../../assets/images/donation11.jpg"
 const SuccessStories = () => {
     return (
         <div className='bg-[#d4fcfd] py-14'>
-            <h2 className='text-3xl text-center text-green-600 font-semibold mb-8'>Successful Stories</h2>
+            <h2 className='text-3xl text-center text-green-600 font-semibold'>Successful Stories</h2>
+            <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
             <Swiper
                 spaceBetween={35}
                 slidesPerView={1}
