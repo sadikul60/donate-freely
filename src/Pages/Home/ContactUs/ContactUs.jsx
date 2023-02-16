@@ -23,7 +23,7 @@ const ContactUs = () => {
                             </div>
                             <div className="py-6">
                             <FaMapMarkerAlt className="w-12 h-12 mx-auto" />
-                                <p className="text-[20px] mt-6">B-234, Sector-1, Uttora, Dhaka</p>
+                                <p className="text-[20px] mt-6">Mohish Bazar, Sopura, Rajshahi.</p>
                                 {/* <p className="p-4">Or contact the Office directly. And get the information you need.</p> */}
                             </div>
                         </div>
