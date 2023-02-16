@@ -9,7 +9,7 @@ const PrimaryButton = ({children}) => {
             // textShadow: "0px 0px 8px rgb(255,0,0)",
             boxShadow: "0px 0px 25px #0b4341",
             transition: {
-                duration: 0.3,
+                duration: 0.5,
                 yoyo: Infinity
             }
         }
