@@ -1,9 +1,26 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
+import { toast } from 'react-toastify';
 import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 const ContactUs = () => {
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const phone = form.phone.value;
+        const subject = form.subject.value;
+        const message = form.message.value;
+
+        const info = {name, email, phone, subject, message}
+        console.log(info)
+        toast.success("Message Submitted!");
+        form.reset();
+    }
     return (
         <div className='bg-[#d4fcfd] py-14'>
             <h2 className='text-3xl text-green-600 font-bold text-center'>Get In Touch</h2>
@@ -31,7 +48,7 @@ const ContactUs = () => {
             </section>
             <section className='px-12 md:px-20 mt-12'>
                 {/* form section  */}
-                <div className="">
+                <form onSubmit={handleSubmit}>
                     <div className='md:flex gap-8'>
                         <div className='md:w-1/2 mx-auto'>
                             <input type="text" name="name" id="" placeholder='NAME' className='w-full bg-[#edfafa] shadow-md border-1 border-green-300 outline-none rounded-md p-4 mb-3' required />
@@ -40,13 +57,13 @@ const ContactUs = () => {
                             <input type="text" name="subject" id="" placeholder='SUBJECT' className='w-full bg-[#edfafa] shadow-md border-1 border-green-300 outline-none rounded-md p-4 mb-3' required />
                         </div>
                         <div className='md:w-1/2 mx-auto'>
-                            <textarea name="messege" id="" rows={9} placeholder='MESSEGE' className='w-full bg-[#edfafa] shadow-md border-1 border-green-300 outline-none rounded-md p-6 mb-3' required />
+                            <textarea name="message" id="" rows={9} placeholder='MESSAGE' className='w-full bg-[#edfafa] shadow-md border-1 border-green-300 outline-none rounded-md p-6 mb-3' required />
                         </div>
                     </div>
                     <div className="flex justify-center items-center mt-5 w-full">
                         <PrimaryButton><input type="submit" value="Send Message" /></PrimaryButton>
                     </div>
-                </div>
+                </form>
             </section>
         </div>
     );

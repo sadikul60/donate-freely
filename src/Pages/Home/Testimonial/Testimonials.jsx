@@ -31,7 +31,7 @@ const RegularDoners = () => {
             details: "email, facebook, linkedIn profile thakbe."
         },
         {
-            id: 3,
+            id: 4,
             img: doners1,
             name: "Kowsik Roy",
             title: "Web Developer",
@@ -39,7 +39,7 @@ const RegularDoners = () => {
             details: "email, facebook, linkedIn profile thakbe."
         },
         {
-            id: 3,
+            id: 5,
             img: doners1,
             name: "Kowsik Roy",
             title: "Web Developer",
@@ -47,7 +47,7 @@ const RegularDoners = () => {
             details: "email, facebook, linkedIn profile thakbe."
         },
         {
-            id: 3,
+            id: 6,
             img: doners1,
             name: "Kowsik Roy",
             title: "Web Developer",
@@ -55,7 +55,7 @@ const RegularDoners = () => {
             details: "email, facebook, linkedIn profile thakbe."
         },
         {
-            id: 3,
+            id: 7,
             img: doners1,
             name: "Kowsik Roy",
             title: "Web Developer",
@@ -63,7 +63,7 @@ const RegularDoners = () => {
             details: "email, facebook, linkedIn profile thakbe."
         },
         {
-            id: 3,
+            id: 8,
             img: doners1,
             name: "Kowsik Roy",
             title: "Web Developer",
