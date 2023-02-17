@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import doners1 from "../../../assets/images/doners1.jpg"
 import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
-import RegularDoner from './RegularDoner';
+import RegularDoner from './Testimonial';
 
 const RegularDoners = () => {
     const data = [
@@ -73,7 +73,7 @@ const RegularDoners = () => {
     ]
     return (
         <section className='bg-red-100 py-14'>
-            <h2 className='text-3xl text-green-600 font-semibold text-center'>Regular Doners</h2>
+            <h2 className='text-3xl text-green-600 font-bold text-center'>Testimonial</h2>
             <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
             <div className='grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 p-8 gap-8'>
                 {

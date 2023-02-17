@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { HiStar } from 'react-icons/hi';
 
 const RegularDoner = ({item}) => {
-    const {img, name, title, details, rating} = item;
+    const {img, name, title} = item;
 
     const buttonVariants = {
         hover: {

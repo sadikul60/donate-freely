@@ -1,14 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import foodImg from "../../../assets/icon/food.png"
 import shelter from "../../../assets/icon/shelter.png"
 import eduction from "../../../assets/icon/icon4.svg"
-import medical from "../../../assets/icon/medicine.svg"
+import medicine from "../../../assets/icon/medicine.svg"
 import clothes from "../../../assets/icon/clothes.svg"
 import others from "../../../assets/icon/icon13.svg"
 import { motion } from 'framer-motion';
 
 
 const DonatePlan = () => {
+    const [loading, setLoading] = useState(true);
+
+    const data = [
+        {
+            id: 1,
+            img: foodImg,
+            title: "Food for a family",
+            description: "Feeding a family can be a big responsibility, especially when it comes to providing healthy and nutritious meals."
+        },
+        {
+            id: 2,
+            img: shelter,
+            title: "Shelter for a family",
+            description: "A shelter for a family is a place where a family can live in safety and security. It can be a temporary or permanent living arrangement."
+        },
+        {
+            id: 3,
+            img: eduction,
+            title: "Education for a child",
+            description: "Education is crucial for a child's development and future success. It helps children acquire knowledge, develop critical thinking skills."
+        },
+        {
+            id: 4,
+            img: clothes,
+            title: "Clothes for a humans",
+            description: "Clothing is an essential aspect of daily life for humans. It provides protection from the elements, helps regulate body temperature."
+        },
+        {
+            id: 5,
+            img: medicine,
+            title: "Medicine for a Patient",
+            description: "Education is crucial for a child's development and future success. It helps children acquire knowledge, develop critical thinking skills."
+        },
+        {
+            id: 6,
+            img: others,
+            title: "For others",
+            description: "Providing support and resources to others can have a positive impact on their lives and well-being. There are many different ways to support."
+        },
+    ];
+
+    const buttonVariants = {
+        hover: {
+            scale: 1,
+            boxShadow: "0px 8px 25px #0b4341",
+            transition: {
+                duration: 0.6,
+                yoyo: Infinity
+            }
+        }
+    }
     
     return (
         <div className='bg-green-100 py-14'>
@@ -19,40 +70,20 @@ const DonatePlan = () => {
                     <p className='md:w-3/4 md:mx-auto pb-8 text-[20px]'>A donation plan, also known as a giving plan or philanthropic plan, is a structured approach to making charitable contributions. It involves setting specific goals for giving and determining the best ways to allocate funds to different causes or organizations.</p>
                 </div>
 
-                <motion.div 
-                    
+                <div 
                     className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                    <div className='bg-blue-400 hover:bg-red-600 text-center p-6 duration-700 hover:mt-[-15px] hover:scale-105'>
-                        <img className='w-16 mx-auto mb-4' src={foodImg} alt="" />
-                        <h3 className='text-[22px] font-semibold text-white mb-2'>Food for a family</h3>
-                        <p className='text-[19px]'>Feeding a family can be a big responsibility, especially when it comes to providing healthy and nutritious meals.</p>
-                    </div>
-                    <div className='bg-blue-400 hover:bg-red-600 text-center p-6 duration-700 hover:mt-[-15px] hover:scale-105'>
-                        <img className='w-16 mx-auto mb-4' src={shelter} alt="" />
-                        <h3 className='text-[22px] font-semibold text-white mb-2'>Shelter for a family</h3>
-                        <p className='text-[19px]'>A shelter for a family is a place where a family can live in safety and security. It can be a temporary or permanent living arrangement.</p>
-                    </div>
-                    <div className='bg-blue-400 hover:bg-red-600 text-center p-6 duration-700 hover:mt-[-15px] hover:scale-105'>
-                        <img className='w-16 mx-auto mb-4' src={eduction} alt="" />
-                        <h3 className='text-[22px] font-semibold text-white mb-2'>Education for a child</h3>
-                        <p>Education is crucial for a child's development and future success. It helps children acquire knowledge, develop critical thinking skills,</p>
-                    </div>
-                    <div className='bg-blue-400 hover:bg-red-600 text-center p-6 duration-700 hover:mt-[-15px] hover:scale-105'>
-                        <img className='w-16 mx-auto mb-4' src={clothes} alt="" />
-                        <h3 className='text-[22px] font-semibold text-white mb-2'>Clothes for a humans</h3>
-                        <p className='text-[19px]'>Clothing is an essential aspect of daily life for humans. It provides protection from the elements, helps regulate body temperature.</p>
-                    </div>
-                    <div className='bg-blue-400 hover:bg-red-600 text-center p-6 duration-700 hover:mt-[-15px] hover:scale-105'>
-                        <img className='w-16 mx-auto mb-4' src={medical} alt="" />
-                        <h3 className='text-[22px] font-semibold text-white mb-2'>Medicine for a Patient</h3>
-                        <p className='text-[19px]'>Medicine care is an important aspect of maintaining the health and well-being of a patient.</p>
-                    </div>
-                    <div className='bg-blue-400 hover:bg-red-600 text-center p-6 duration-700 hover:mt-[-15px] hover:scale-105'>
-                        <img className='w-16 mx-auto mb-4' src={others} alt="" />
-                        <h3 className='text-[22px] font-semibold text-white mb-2'>For others</h3>
-                        <p className='text-[19px]'>Providing support and resources to others can have a positive impact on their lives and well-being. There are many different ways to support.</p>
-                    </div>
-                </motion.div>
+                    {
+                        data.map(item => <motion.div  
+                            variants={buttonVariants}
+                            whileHover="hover"
+                            key={item?.id} 
+                            className='bg-[#6cd8db] text-center p-6'>
+                            <img className='w-16 mx-auto mb-4' src={item?.img} alt="img" />
+                            <h3 className='text-[22px] font-semibold mb-2'>{item?.title}</h3>
+                            <p className='text-[19px]'>{item?.description}</p>
+                    </motion.div>)
+                    }
+                </div>
             </section>
         </div>
     );

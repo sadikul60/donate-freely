@@ -6,7 +6,7 @@ import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 const ContactUs = () => {
     return (
         <div className='bg-[#d4fcfd] py-14'>
-            <h2 className='text-3xl text-green-600 font-semibold text-center'>Get In Touch</h2>
+            <h2 className='text-3xl text-green-600 font-bold text-center'>Get In Touch</h2>
             <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
             <section>
                 <div className='text-center'>
