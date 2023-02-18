@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-slate-300 ">
+        <div className="navbar bg-slate-300">
             <div className="navbar-start relative">
                 {/* For mobile device menu */}
                 <div className="dropdown">
@@ -13,7 +13,7 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-300 rounded-box w-52">
                     <li><Link to="/" className='bg-white mb-2'>Home</Link></li>
-                    <li><Link className='bg-white mb-2'>Browse Fundraisers</Link></li>
+                    <li><Link to="/mainFundraisers" className='bg-white mb-2'>Browse Fundraisers</Link></li>
                     <li tabIndex={0}>
                         <Link className='bg-white mb-2'>
                         Fundraise For
@@ -26,7 +26,7 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li><Link className='bg-white mb-2'>How It Works</Link></li>
-                    <li><Link className='bg-white mb-2'>Start a Fundraise</Link></li>
+                    <li><Link to="/donateForm" className='bg-white mb-2'>Donate Now</Link></li>
                     <li><Link className='bg-white mb-2'><FaWhatsapp className='w-6 h-6 text-green-400' />Chat</Link></li>
                     <li><Link className='bg-white mb-2'>LogIn</Link></li>
                     </ul>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 {/* For large device menu*/}
                 <ul className="menu menu-horizontal px-1">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link>Browse Fundraisers</Link></li>
+                    <li><Link to="/mainFundraisers">Browse Fundraisers</Link></li>
                     <li tabIndex={0}>
                         <Link>
                             Fundraise For

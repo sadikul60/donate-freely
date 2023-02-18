@@ -100,7 +100,7 @@ const GiveThems = () => {
                 <div className='pl-8 pt-12 xl:pt-28 text-center'>
                     <h2 className='text-3xl text-green-600 font-bold'>Give Someone’s Life By Giving Of Yours</h2>
                     <p className='pb-8 text-[20px] pt-6'>A little support from you means a lot to them. So come, we willingly stand by them. Help them in danger.</p>
-                    <PrimaryButton>Start a Fundraise</PrimaryButton>
+                    <Link to="/donateForm"><PrimaryButton>Donate Now</PrimaryButton></Link>
                 </div>
             </section>
         </div>
