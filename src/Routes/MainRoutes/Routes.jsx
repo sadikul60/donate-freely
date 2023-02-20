@@ -2,7 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layouts/Main/Main";
 import DonateNowForm from "../../Pages/DonateForm/DonateNowForm";
 import MainHome from "../../Pages/Home/MainHome/MainHome";
-import Fundraisers from "../../Pages/MainFundraisers/Fundraisers/Fundraisers";
+import MainFundraisers from "../../Pages/MainFundraisers/MainFundraisers/MainFundraisers";
+import Medical from "../../Pages/MainFundraisers/Medical/Medical";
+
+
+
 
 export const router = createBrowserRouter([
     {
@@ -23,7 +27,13 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/mainFundraisers",
-                element: <Fundraisers />
+                element: <MainFundraisers />,
+                children: [
+                    {
+                        path: '/mainFundraisers/medical',
+                        element: <Medical />
+                    }
+                ]
             },
         ]
     }

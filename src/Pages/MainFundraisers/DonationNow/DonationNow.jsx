@@ -4,9 +4,10 @@ import donationImg from "../../../assets/images/donation8.jpg"
 import { motion } from 'framer-motion';
 import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
+
 const DonationNow = () => {
     return (
-        <div className=''>
+        <div className='bg-red-100 '>
             <motion.section 
                 initial={{ x: '100vw'}}
                 animate={{x: 0}}

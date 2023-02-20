@@ -29,7 +29,7 @@ const DonationNow = () => {
                     <div className='lg:w-8/12 mx-5 mt-8'>
                         <h2 className='text-[22px] font-semibold mb-4'>Start Monthly Donation to Save Lives</h2>
                         <p className='text-justify mb-6'>With your support, countless children will receive health care and a happy life. Start your monthly donation today.</p>
-                        <Link><PrimaryButton>Donate now</PrimaryButton></Link>
+                        <Link to="/donateForm"><PrimaryButton>Donate now</PrimaryButton></Link>
                     </div>
                 </div>
             </section>
