@@ -1,11 +1,45 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Medical1 from "../../../assets/medical/medical1.avif"
+import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 const Medical = () => {
+    const data = [
+        {
+            id: 1,
+            img: Medical1,
+            title: "Her Mother Needs Your Help To Survive Blood Clots In The Brain!",
+            description: "As this disease has left her unconscious, she is completely bedridden and can hardly move her body. My mother has always been a simple and cheerful woman. But, ever since the beginning of this year she has been quite ill and weak and now suffering from blood clotting in the brain. Her history of diabetes is adding to her misery. We as a family can only pray for her tremendous pain to go away, and provide aid her with medical help. I and my brother are my parent’s only emotional and financial support, while my dad is a retired person, he receives a minimal amount of monthly pension."
+        },
+        {
+            id: 1,
+            img: Medical1,
+            title: "Her Mother Needs Your Help To Survive Blood Clots In The Brain!",
+            description: "As this disease has left her unconscious, she is completely bedridden and can hardly move her body. My mother has always been a simple and cheerful woman. But, ever since the beginning of this year she has been quite ill and weak and now suffering from blood clotting in the brain. Her history of diabetes is adding to her misery. We as a family can only pray for her tremendous pain to go away, and provide aid her with medical help. I and my brother are my parent’s only emotional and financial support, while my dad is a retired person, he receives a minimal amount of monthly pension."
+        },
+        {
+            id: 1,
+            img: Medical1,
+            title: "Her Mother Needs Your Help To Survive Blood Clots In The Brain!",
+            description: "As this disease has left her unconscious, she is completely bedridden and can hardly move her body. My mother has always been a simple and cheerful woman. But, ever since the beginning of this year she has been quite ill and weak and now suffering from blood clotting in the brain. Her history of diabetes is adding to her misery. We as a family can only pray for her tremendous pain to go away, and provide aid her with medical help. I and my brother are my parent’s only emotional and financial support, while my dad is a retired person, he receives a minimal amount of monthly pension."
+        },
+    ]
     return (
-        <div>
-            <h1>Medical</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quasi repudiandae deleniti similique molestiae consequuntur eveniet, consequatur nemo neque, est, odit illum fuga facere. Rem explicabo, nemo hic debitis aliquam perferendis enim neque sed corrupti itaque. Facere impedit quibusdam officia, libero soluta possimus aliquam sunt reiciendis assumenda atque ipsum! Assumenda corrupti nemo vitae ipsa mollitia deserunt dicta dignissimos, sed necessitatibus. Temporibus enim molestiae dolor minus aliquam expedita alias quo pariatur eum dignissimos, asperiores, natus reiciendis numquam? Dolorum doloribus vel quam nulla perspiciatis quae non officiis, magnam aliquid adipisci cupiditate molestias ullam? Velit, ipsam voluptatibus adipisci asperiores assumenda nobis ut quaerat sapiente minus unde error veritatis, quae, illo repellat sed porro quia? Veritatis doloribus reiciendis autem illum officiis, laborum molestiae laudantium provident doloremque pariatur quos neque quam id esse maiores et consequatur hic quibusdam maxime sint sequi nesciunt. Exercitationem earum dignissimos, quis deserunt consectetur animi, libero itaque temporibus molestias soluta accusamus voluptatibus tenetur molestiae rem! Excepturi, tempore! Provident exercitationem quaerat voluptatum. A perferendis voluptas molestias minima, repellat cum rerum cumque optio, odit unde et ratione officia laboriosam nisi exercitationem dolorem autem. Tempora asperiores illo eaque quasi voluptate quod reprehenderit sequi, quae nulla eveniet sapiente quam laborum! Officia fugit laborum aut minima rerum porro a doloremque perferendis provident voluptatibus architecto iure, enim vitae inventore molestiae sunt nulla minus impedit omnis iusto quisquam beatae expedita qui. Repellat earum odit, corporis commodi deserunt dolorem consequuntur iusto atque recusandae cum inventore libero doloremque est vero? Praesentium soluta asperiores ex harum, quidem minus consectetur eligendi quam provident? Reprehenderit voluptate obcaecati animi totam dolorem consequuntur dicta sequi! Unde voluptate, eius nobis eligendi vel, repellendus blanditiis tempora recusandae dolorem ratione quas neque dolor sapiente minima maxime! Reprehenderit placeat, consequatur earum iste at rem a. Velit nostrum cum nesciunt atque voluptas eligendi ratione ut tenetur maiores, recusandae eveniet, molestiae repellendus nihil doloremque fugiat fugit quam officia assumenda porro adipisci dicta? Laborum itaque pariatur nostrum deserunt illo soluta id, magni provident ut? Itaque nesciunt facere in delectus ducimus reiciendis ipsum similique hic deleniti culpa. Voluptates repellendus reprehenderit molestiae nihil dolor vero earum corrupti? Dolorem explicabo eos, nisi vitae sint magnam nesciunt ullam sit earum doloribus, similique culpa ducimus, voluptate aliquid in temporibus! Vel, tempora explicabo. Obcaecati fuga tempora dolor iure, asperiores aperiam temporibus voluptatum saepe ab similique nulla dolores mollitia, perferendis dicta dolorum? Minima dolorum delectus vel quam, nostrum quo consequatur. Officiis enim quod earum eaque, saepe laboriosam impedit error nostrum labore aperiam hic aut beatae voluptatem ratione, nisi dicta nam veritatis inventore perspiciatis voluptate debitis est nemo quisquam? Repudiandae veritatis facere inventore excepturi. Fugit molestias accusamus vitae at debitis dolorem, nobis vero, neque optio dolor officiis qui excepturi cum officia quam et. Alias architecto saepe numquam sequi et necessitatibus in itaque laudantium iste unde soluta eos fugit a, perferendis voluptas molestias autem temporibus velit veniam qui eaque aperiam sint. Earum temporibus, dolor amet quae sed iure eum provident facilis voluptatem praesentium id numquam, modi nulla obcaecati ipsam? Rerum velit, assumenda ipsam alias mollitia eveniet amet necessitatibus ut. Incidunt et nulla dolores aliquid, beatae totam magni. Quos amet repellat, voluptate incidunt illo labore architecto at rem fugiat nobis ratione repudiandae, sapiente eius? Eveniet incidunt ex pariatur dicta quasi ab dolor veritatis corporis perferendis quae, quod iure consequatur vero dignissimos debitis a officiis, quaerat architecto quam libero dolorem. Dolorum, id quidem! Suscipit incidunt voluptatum minima ullam rerum harum? Mollitia magnam accusantium vitae iste magni eaque soluta quo fuga tenetur omnis pariatur sequi possimus nisi labore commodi qui nulla consequuntur dignissimos deleniti, recusandae quaerat quia consequatur rerum. Neque cumque dolorem tenetur alias earum unde, corporis iure maxime minus dolorum officiis animi sequi cum? Illo laudantium dolor quasi, commodi veritatis accusantium vitae cum debitis ipsam ipsum repellendus maxime? Possimus, veritatis! Accusantium aliquam id nisi laudantium vitae ea veritatis, reprehenderit, magni illum deleniti culpa dolorum quisquam dolore reiciendis, itaque inventore nihil cumque maxime. Voluptates odit quo pariatur harum mollitia tenetur quas laboriosam rem nihil vel, sapiente, minus veritatis aliquam asperiores accusamus quos nesciunt et blanditiis delectus, doloremque vitae quisquam nostrum possimus odio! Tempora illo facere debitis veniam, vitae est itaque suscipit, architecto possimus sunt aut dignissimos modi explicabo. Quisquam excepturi dolorem reprehenderit? Consequuntur optio esse excepturi. Necessitatibus perspiciatis architecto voluptatum assumenda, aliquid quos laboriosam!</p>
-        </div>
+        <section className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
+            {
+                data.map(item => <div
+                    key={item?.id}
+                    className="border-2 border-white rounded-md hover:shadow-red-400 hover:shadow-2xl"
+                >
+                    <img className='w-full rounded-t-md' src={item?.img} alt="" />
+                    <div className='px-4 pb-4'>
+                        <h3 className='text-[22px] font-semibold mt-4 mb-3'>{item?.title.slice(0, 20)}...</h3>
+                        <p className='text-[19px] text-justify'>{item?.description.slice(0, 130)}...</p>
+                        <Link><button className='outline outline-red-600 py-1 rounded text-center font-bold mt-4 w-full'>Details</button></Link>
+                    </div>
+                </div>)
+            }
+        </section>
     );
 };
 
