@@ -21,14 +21,17 @@ const MainFundraisers = () => {
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <HiMenu className='w-7 h-7'></HiMenu>
                         </label>
-                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-300 rounded-box w-52">
+                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
+                            <div className='bg-[#122746] px-4 pb-12 pt-6 rounded-md'>
+                                <h4 className='text-[16px] text-white text-center font-bold pb-4'>All Categories</h4>
                                 <li className='text-center'><Link to="" className='bg-white mb-2'>Education</Link></li>
-                                <li><Link to="/mainFundraisers/medical" className='bg-white mb-2'>Medical</Link></li>
+                                <li><Link to="/fundraisers/medical" className='bg-white mb-2'>Medical</Link></li>
                                 <li><Link className='bg-white mb-2'>Woman & Girls</Link></li>
                                 <li><Link className='bg-white mb-2'>Food & Hunger</Link></li>
                                 <li><Link className='bg-white mb-2'>Environment</Link></li>
                                 <li><Link className='bg-white mb-2'>Children</Link></li>
                                 <li><Link className='bg-white mb-2'>Others</Link></li>
+                            </div>
                         </ul>
                     </div>
                     <div className="form-control hidden lg:block ">
@@ -42,9 +45,10 @@ const MainFundraisers = () => {
                     <section className="navbar-end hidden lg:flex lg:w-4/12 ">
                         {/* For large device menu*/}
                         <ul className="menu menu-vertical p-8  w-full">
-                            <div className='bg-[#122746] px-4 py-12 rounded-md'>
+                            <div className='bg-[#122746] px-4 pb-12 pt-6 rounded-md'>
+                                <h4 className='text-xl text-white text-center font-bold pb-4'>All Categories</h4>
                                 <li><Link className='bg-white mb-2'>Education</Link></li>
-                                <li><Link to="/mainFundraisers/medical" className='bg-white mb-2'>Medical</Link></li>
+                                <li><Link to="/fundraisers/medical" className='bg-white mb-2'>Medical</Link></li>
                                 <li><Link className='bg-white mb-2'>Woman & Girls</Link></li>
                                 <li><Link className='bg-white mb-2'>Food & Hunger</Link></li>
                                 <li><Link className='bg-white mb-2'>Environment</Link></li>

@@ -13,7 +13,7 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-300 rounded-box w-52">
                     <li><Link to="/" className='bg-white mb-2'>Home</Link></li>
-                    <li><Link to="/mainFundraisers" className='bg-white mb-2'>Browse Fundraisers</Link></li>
+                    <li><Link to="/fundraisers" className='bg-white mb-2'>Browse Fundraisers</Link></li>
                     <li tabIndex={0}>
                         <Link className='bg-white mb-2'>
                         Fundraise For
@@ -43,7 +43,7 @@ const Navbar = () => {
                 {/* For large device menu*/}
                 <ul className="menu menu-horizontal px-1">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/mainFundraisers">Browse Fundraisers</Link></li>
+                    <li><Link to="/fundraisers">Browse Fundraisers</Link></li>
                     <li tabIndex={0}>
                         <Link>
                             Fundraise For
