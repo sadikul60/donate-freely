@@ -23,10 +23,16 @@ const ContactUs = () => {
     }
     return (
         <div className='bg-[#d4fcfd] py-14'>
-            <h2 className='text-3xl text-green-600 font-bold text-center'>Get In Touch</h2>
-            <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
+            <div data-aos="fade-right" data-aos-duration="3000">
+                <h2 className='text-3xl text-green-600 font-bold text-center'>Get In Touch</h2>
+                <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
+            </div>
             <section>
-                <div className='text-center'>
+                <div 
+                    className='text-center'
+                    data-aos="fade-left" 
+                    data-aos-duration="3000"
+                    >
                         <div className="mx-6 xl:mx-auto z-10 rounded-lg grid grid-cols-1 xl:grid-cols-3 px-12 md:px-20 gap-6 ">
                             <div className="py-6">
                                 <FaPhoneAlt className="w-12 h-10 mx-auto" />
@@ -46,7 +52,11 @@ const ContactUs = () => {
                         </div>
                     </div>
             </section>
-            <section className='px-12 md:px-20 mt-12'>
+            <section 
+                className='px-12 md:px-20 mt-12'
+                data-aos="fade-right" 
+                data-aos-duration="3000"
+                >
                 {/* form section  */}
                 <form onSubmit={handleSubmit}>
                     <div className='md:flex gap-8'>

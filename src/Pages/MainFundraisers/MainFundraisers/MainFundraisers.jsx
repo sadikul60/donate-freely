@@ -44,7 +44,7 @@ const MainFundraisers = () => {
                     </section>
                     <section className="navbar-end hidden lg:flex lg:w-4/12 ">
                         {/* For large device menu*/}
-                        <ul className="menu menu-vertical p-8  w-full">
+                        <ul className="menu menu-vertical p-8 w-full">
                             <div className='bg-[#122746] px-4 pb-12 pt-6 rounded-md'>
                                 <h4 className='text-xl text-white text-center font-bold pb-4'>All Categories</h4>
                                 <li><Link className='bg-white mb-2'>Education</Link></li>

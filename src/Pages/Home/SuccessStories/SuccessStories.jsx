@@ -58,8 +58,10 @@ const SuccessStories = () => {
     ]
     return (
         <div className='bg-[#d4fcfd] py-14'>
-            <h2 className='text-3xl text-center text-green-600 font-semibold'>Successful Stories</h2>
-            <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
+            <div data-aos="fade-left" data-aos-duration="3000">
+                <h2 className='text-3xl text-center text-green-600 font-semibold'>Successful Stories</h2>
+                <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
+            </div>
             <Swiper
                 spaceBetween={35}
                 slidesPerView={1}
@@ -81,11 +83,15 @@ const SuccessStories = () => {
                 }}
                 navigation={true}
                 modules={[Autoplay, Navigation]}
-                // className="mySwiper"  
+                
+                // AOS animation 
+                data-aos="fade-right" data-aos-duration="3000"
                 >
             {
                 data.map(item => <SwiperSlide 
-                    key={item?.id} className='bg-white rounded-md p-4 shadow-lg relative'>
+                    key={item?.id} 
+                    className='bg-white rounded-md p-4 shadow-lg relative'
+                    >
                         <img className='w-full h-48 mx-auto' src={item?.img} alt="" /> 
                         <p className='text-center text-2xl mt-6'>{item?.title}</p>
                         <p className='text-[18px] text-justify  p-4'>{item?.description.slice(0, 220)}..

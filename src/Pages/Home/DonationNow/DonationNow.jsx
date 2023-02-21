@@ -10,7 +10,7 @@ const DonationNow = () => {
             <motion.section 
                 initial={{ x: '100vw'}}
                 animate={{x: 0}}
-                transition={{type: 'spring', delay: 0.5}}
+                transition={{type: 'spring', delay: .5}}
                 className='bg-green-300 lg:w-8/12 lg:mx-auto lg:relative lg:mt-[-100px] my-8 pl-8 hidden xl:block'>
                 <div className='lg:flex lg:items-center center pt-8 lg:pt-0 '>
                     <Link to="/donateForm" className='h-full mx-auto'>

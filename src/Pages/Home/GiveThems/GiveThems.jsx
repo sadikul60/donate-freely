@@ -23,8 +23,11 @@ import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 const GiveThems = () => {
     return (
         <div className='bg-[#d4fcfd] py-14 items-center'>
-            <section className='grid grid-cols-1 xl:grid-cols-2'>
-                <div className='xl:ml-8'>
+            <section 
+                className='grid grid-cols-1 xl:grid-cols-2' 
+                data-aos="fade-left"
+                data-aos-duration="3000">
+                <div className='xl:ml-8' >
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}

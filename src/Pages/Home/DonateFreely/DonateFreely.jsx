@@ -5,9 +5,15 @@ import { FaCreditCard, FaDesktop, FaDonate, FaMoneyBillAlt, FaTools } from "reac
 const DonateFreely = () => {
     return (
         <div className='bg-green-100 py-14'>
-            <h2 className='text-3xl text-center text-green-600 font-bold'>Why DonateFreely?</h2>
-            <div className='border-2 border-red-600 w-16 mx-auto mb-3 mt-2 rounded'></div>
-            <section className='grid grid-cols-2 xl:grid-cols-4 gap-8 p-8'>
+            <div data-aos="fade-right" data-aos-duration="3000">
+                <h2 className='text-3xl text-center text-green-600 font-bold'>Why DonateFreely?</h2>
+                <div className='border-2 border-red-600 w-16 mx-auto mb-3 mt-2 rounded'></div>
+            </div>
+            <section 
+                className='grid grid-cols-2 xl:grid-cols-4 gap-8 p-8' 
+                data-aos="zoom-in-right"
+                data-aos-duration="3000"
+                >
                 <div className='mt-4 p-2'>
                     <HiThumbUp className='w-20 h-20 mx-auto text-[#039695] p-2 border-2 border-[#039695] rounded-full' />
                     <div className='border-2 border-red-600 w-20  mx-auto mt-4 rounded'></div>
