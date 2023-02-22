@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import SecondaryButton from '../../components/SecondaryButton/SecondaryButton';
+import { AuthContext } from '../../Contexts/AuthProvider';
 
 
 const Register = () => {
+    const {createUser} = useContext(AuthContext);
     const handleRegister = event => {
         event.preventDefault();
 
@@ -14,8 +16,15 @@ const Register = () => {
         const email = form.email.value;
         const password = form.password.value;
 
+        createUser(email, password)
+        .then(result => {
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(err => console.log(err))
+
         const data = {img, name, email, password}
-        console.log(data);
+        // console.log(data);
         toast.success("Register successfull!");
         form.reset();
     }
