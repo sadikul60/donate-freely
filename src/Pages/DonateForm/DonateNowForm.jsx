@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import CardImg from '../../assets/logo/PaymentCrd.png';
-import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
+import SecondaryButton from '../../components/SecondaryButton/SecondaryButton';
 
 const DonateNowForm = () => {
     const [amount, setAmount] = useState(5);
@@ -18,7 +18,6 @@ const DonateNowForm = () => {
         toast.success("Donation submitted!");
         form.reset();
     }
-
     
     return (
         <div className='bg-red-50 py-14'>
@@ -75,7 +74,7 @@ const DonateNowForm = () => {
                         <p className='font-bold'>$ {amount}</p>
                     </label>
                 </div>
-                <PrimaryButton><input type="submit" value="Donate Now" /></PrimaryButton>
+                <SecondaryButton><input type="submit" value="Donate Now" /></SecondaryButton>
             </form>
         </div>
     );
