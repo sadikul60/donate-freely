@@ -67,7 +67,7 @@ const Navbar = () => {
                     <Link to="/donateForm" className="bg-white outline outline-green-600 px-4 py-2 rounded-md mr-5">
                         <span className='font-bold text-green-600 uppercase'>Donate</span>
                     </Link>
-                    <Link className='btn btn-ghost mr-5 text-[19px]'>LogIn</Link>
+                    <Link to="/login" className='btn btn-ghost mr-5 text-[19px]'>LogIn</Link>
                 </div>
             </div>
         </div>

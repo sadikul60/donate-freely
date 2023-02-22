@@ -8,9 +8,20 @@ const MainFundraisers = () => {
         <div>
             <div className='w-full h-full' style={{ backgroundImage: `url(${Banner})`, backgroundSize:'cover', backgroundRepeat: 'no-repeat'}}>
                 <div className='w-full h-60 flex items-center justify-center '>
-                    <h1 className='text-4xl md:text-5xl xl:text-6xl font-bold text-white text-center p-4'>Support any helpless humans <p className=''>Every Month</p></h1>
+                    <h1 
+                        className='text-4xl md:text-5xl xl:text-6xl font-bold text-white text-center p-4'
+                        data-aos="fade-left"
+                        data-aos-offset="500"
+                        data-aos-duration="2000"
+                        >Support any helpless humans <p className=''>Every Month</p></h1>
                 </div>
-                <Link to="/donateForm" className='flex items-center justify-center  mt-[-20px] xl:mt-0 pb-8 xl:pb-16'>
+                <Link to="/donateForm" 
+                    className='flex items-center justify-center  mt-[-20px] xl:mt-0 pb-8 xl:pb-16'
+                    data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="2000"
+                    >
                     <button className='outline outline-green-600 text-[19px] font-bold text-white px-4 py-2 rounded-3xl hover:bg-[#122746]'>Donate Now</button>
                 </Link>
             </div>
