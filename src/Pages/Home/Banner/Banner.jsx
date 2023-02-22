@@ -8,7 +8,7 @@ const Banner = () => {
         <div className='bg-green-100 pb-14 pt-4'>
            <div className='container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8'
                 data-aos="fade-right"
-                data-aos-duration="3000"
+                data-aos-duration="2000"
                 >
                 <div className=''>
                     <img className='w-full md:rounded-md shadow-lg md:p-2' src={BannerImg} alt="" />

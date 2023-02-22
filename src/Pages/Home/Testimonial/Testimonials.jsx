@@ -73,7 +73,7 @@ const RegularDoners = () => {
     ]
     return (
         <section className='bg-red-100 py-14'>
-            <div data-aos="fade-right" data-aos-duration="3000">
+            <div data-aos="fade-right" data-aos-duration="2000">
                 <h2 className='text-3xl text-green-600 font-bold text-center'>Testimonial</h2>
                 <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
             </div>

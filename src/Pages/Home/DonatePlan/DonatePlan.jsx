@@ -67,7 +67,7 @@ const DonatePlan = () => {
                 <div 
                     className='text-center'
                     data-aos="fade-left"
-                    data-aos-duration="3000"
+                    data-aos-duration="2000"
                     >
                     <h2 className='text-3xl text-green-600 font-bold'>Our Donate Plan</h2>
                     <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
@@ -85,7 +85,7 @@ const DonatePlan = () => {
                             <div 
                                 data-aos="fade-down"
                                 data-aos-easing="linear"
-                                data-aos-duration="3000">
+                                data-aos-duration="2000">
                             <img className='w-16 mx-auto mb-4' src={item?.img} alt="img" />
                             <h3 className='text-[22px] font-semibold mb-2'>{item?.title}</h3>
                             <p className='text-[19px]'>{item?.description}</p>

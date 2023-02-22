@@ -8,7 +8,7 @@ const MVC = () => {
                     className='text-center text-2xl text-[#0b4341] py-8 px-4 rounded shadow-xl'
                     data-aos="fade-down"
                     data-aos-easing="linear"
-                    data-aos-duration="3000"
+                    data-aos-duration="2000"
                     >
                     <h2 className='mb-4 uppercase font-bold'>Mission</h2>
                     <div className='border-2 border-red-600 w-28 mx-auto mt-[-10px] mb-4 rounded'></div>
@@ -18,7 +18,7 @@ const MVC = () => {
                     className='text-center text-2xl text-[#0b4341] py-8 px-4 rounded shadow-xl'
                     data-aos="fade-down"
                     data-aos-easing="linear"
-                    data-aos-duration="3000"
+                    data-aos-duration="2000"
                     >
                     <h2 className='mb-4 uppercase font-bold'>Vision</h2>
                     <div className='border-2 border-red-600 w-24 mx-auto mt-[-10px] mb-4 rounded'></div>
@@ -30,7 +30,7 @@ const MVC = () => {
                 className='mx-8 md:w-3/4 xl:w-1/2 md:mx-auto text-[#0b4341] text-center text-2xl mt-8 py-8 px-4 rounded shadow-xl'
                 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="3000"
+                data-aos-duration="2000"
                 >
                 <h2 className='mb-4 uppercase font-bold'>Commitment</h2>
                 <div className='border-2 border-red-600 w-44 mx-auto mt-[-10px] mb-4 rounded'></div>

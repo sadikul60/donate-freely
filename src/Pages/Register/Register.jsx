@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import SecondaryButton from '../../components/SecondaryButton/SecondaryButton';
@@ -7,6 +7,10 @@ import { AuthContext } from '../../Contexts/AuthProvider';
 
 const Register = () => {
     const {createUser} = useContext(AuthContext);
+    const [error, setError] = useState('');
+
+    const ImageHostKey = process.env.REACT_APP_Imagebb_apiKey;
+
     const handleRegister = event => {
         event.preventDefault();
 
@@ -16,15 +20,32 @@ const Register = () => {
         const email = form.email.value;
         const password = form.password.value;
 
-        createUser(email, password)
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-        })
-        .catch(err => console.log(err))
+        // createUser(email, password)
+        // .then(result => {
+        //     const user = result.user;
+        //     console.log(user);
+        // })
+        // .catch(err => setError(err.message))
+
+        //image post to imagebb
+        // const formData = new FormData();
+        // formData.append('image', img[2]);
+        // const url = `https://api.imgbb.com/1/upload?key=${ImageHostKey}`;
+        // fetch(url, {
+        //     method: 'POST',
+        //     body: formData
+        // })
+        //     .then(res => res.json())
+        //     .then(imageData => {
+        //         // const img = (imageData.data.display_url);
+        //         console.log(imageData);
+        //         const data = {
+        //             name, email, password, img
+        //         }
+        //     })
 
         const data = {img, name, email, password}
-        // console.log(data);
+        console.log(data);
         toast.success("Register successfull!");
         form.reset();
     }

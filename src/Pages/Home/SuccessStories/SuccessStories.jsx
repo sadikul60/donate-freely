@@ -58,7 +58,7 @@ const SuccessStories = () => {
     ]
     return (
         <div className='bg-[#d4fcfd] py-14'>
-            <div data-aos="fade-left" data-aos-duration="3000">
+            <div data-aos="fade-left" data-aos-duration="2000">
                 <h2 className='text-3xl text-center text-green-600 font-semibold'>Successful Stories</h2>
                 <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
             </div>
@@ -85,7 +85,7 @@ const SuccessStories = () => {
                 modules={[Autoplay, Navigation]}
                 
                 // AOS animation 
-                data-aos="fade-right" data-aos-duration="3000"
+                data-aos="fade-right" data-aos-duration="2000"
                 >
             {
                 data.map(item => <SwiperSlide 

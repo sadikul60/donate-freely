@@ -26,7 +26,7 @@ const GiveThems = () => {
             <section 
                 className='grid grid-cols-1 xl:grid-cols-2' 
                 data-aos="fade-left"
-                data-aos-duration="3000">
+                data-aos-duration="2000">
                 <div className='xl:ml-8' >
                     <Swiper
                         spaceBetween={30}

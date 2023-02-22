@@ -21,7 +21,7 @@ const RegularDoner = ({item}) => {
             whileHover="hover"
             className='text-center rounded-xl'
             data-aos="zoom-in-right"
-            data-aos-duration="3000"
+            data-aos-duration="2000"
             >
             <img className='w-full h-48 mx-auto rounded-t-xl mb-6' src={img} alt="" />
             <div className='p-1'>
