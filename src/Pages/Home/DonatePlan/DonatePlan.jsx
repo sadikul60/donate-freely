@@ -84,7 +84,6 @@ const DonatePlan = () => {
                             className='bg-[#6cd8db] text-center p-6'>
                             <div 
                                 data-aos="fade-down"
-                                data-aos-easing="linear"
                                 data-aos-duration="2000">
                             <img className='w-16 mx-auto mb-4' src={item?.img} alt="img" />
                             <h3 className='text-[22px] font-semibold mb-2'>{item?.title}</h3>

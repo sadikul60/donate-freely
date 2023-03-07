@@ -72,7 +72,7 @@ const SuccessStories = () => {
                     slidesPerView: 1.8,
                     },
                     1200: {
-                    slidesPerView: 2.7,
+                    slidesPerView: 3,
                     },
                 }}
                 autoplay={{
@@ -85,15 +85,15 @@ const SuccessStories = () => {
                 modules={[Autoplay, Navigation]}
                 
                 // AOS animation 
-                data-aos="fade-right" data-aos-duration="2000"
+                
                 >
             {
                 data.map(item => <SwiperSlide 
                     key={item?.id} 
-                    className='bg-white rounded-md p-4 shadow-lg relative'
+                    className='bg-white rounded-md p-4 shadow-lg'
                     >
                         <img className='w-full h-48 mx-auto' src={item?.img} alt="" /> 
-                        <p className='text-center text-2xl mt-6'>{item?.title}</p>
+                        <p className='text-center text-2xl mt-6'>{item?.title.slice(0,20)}...</p>
                         <p className='text-[18px] text-justify  p-4'>{item?.description.slice(0, 220)}..
                             <Link className='text-red-600 text-[18px] font-semibold link-hover p-4'>See More</Link>
                         </p>

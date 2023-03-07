@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { HiStar } from 'react-icons/hi';
 
-const RegularDoner = ({item}) => {
+const Testimonial = ({item}) => {
     const {img, name, title} = item;
 
     const buttonVariants = {
@@ -39,4 +39,4 @@ const RegularDoner = ({item}) => {
     );
 };
 
-export default RegularDoner;
+export default Testimonial;

@@ -7,7 +7,6 @@ const MVC = () => {
                 <div 
                     className='text-center text-2xl text-[#0b4341] py-8 px-4 rounded shadow-xl'
                     data-aos="fade-down"
-                    data-aos-easing="linear"
                     data-aos-duration="2000"
                     >
                     <h2 className='mb-4 uppercase font-bold'>Mission</h2>
@@ -17,7 +16,6 @@ const MVC = () => {
                 <div 
                     className='text-center text-2xl text-[#0b4341] py-8 px-4 rounded shadow-xl'
                     data-aos="fade-down"
-                    data-aos-easing="linear"
                     data-aos-duration="2000"
                     >
                     <h2 className='mb-4 uppercase font-bold'>Vision</h2>
@@ -29,7 +27,6 @@ const MVC = () => {
             <div 
                 className='mx-8 md:w-3/4 xl:w-1/2 md:mx-auto text-[#0b4341] text-center text-2xl mt-8 py-8 px-4 rounded shadow-xl'
                 data-aos="fade-down"
-                data-aos-easing="linear"
                 data-aos-duration="2000"
                 >
                 <h2 className='mb-4 uppercase font-bold'>Commitment</h2>

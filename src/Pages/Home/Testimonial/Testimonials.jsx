@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import doners1 from "../../../assets/images/doners1.jpg"
 import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
-import RegularDoner from './Testimonial';
+import Testimonial from './Testimonial';
 
-const RegularDoners = () => {
+const Testimonials = () => {
     const data = [
         {
             id: 1,
@@ -79,10 +79,10 @@ const RegularDoners = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 p-8 gap-8'>
                 {
-                    data.map(item => <RegularDoner
+                    data.map(item => <Testimonial
                         key={item?.id}
                         item={item}
-                    ></RegularDoner>)
+                    ></Testimonial>)
                 }
             </div>
             <div className='ml-[40%] xl:ml-[45%] mt-4'>
@@ -94,4 +94,4 @@ const RegularDoners = () => {
     );
 };
 
-export default RegularDoners;
+export default Testimonials;

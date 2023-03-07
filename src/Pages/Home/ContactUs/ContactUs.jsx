@@ -30,11 +30,10 @@ const ContactUs = () => {
             <section>
                 <div 
                     className='text-center'
-                    data-aos="fade-left" 
-                    data-aos-duration="2000"
                     >
-                        <div className="mx-6 xl:mx-auto z-10 rounded-lg grid grid-cols-1 xl:grid-cols-3 px-12 md:px-20 gap-6 ">
-                            <div className="py-6">
+                        <div 
+                            className="mx-6 xl:mx-auto z-10 rounded-lg grid grid-cols-1 xl:grid-cols-3 px-12 md:px-20 gap-6 ">
+                            <div className="py-6" >
                                 <FaPhoneAlt className="w-12 h-10 mx-auto" />
                                 <p className="text-[20px] mt-6">+5-4698-6358-931</p>
                                 {/* <p className="p-4">Contact via direct Phone call. And get the information you need.</p> */}

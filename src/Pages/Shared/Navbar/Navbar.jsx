@@ -1,14 +1,15 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import logo from "../../../assets/logo/donationLogo.png"
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-slate-300">
-            <div className="navbar-start relative">
+        <div className="navbar bg-black">
+            <div className="navbar-start relative py-2">
                 {/* For mobile device menu */}
                 <div className="dropdown">
-                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                    <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
                         Menu
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-300 rounded-box w-52">
@@ -31,17 +32,18 @@ const Navbar = () => {
                     <li><Link className='bg-white mb-2'>LogIn</Link></li>
                     </ul>
                 </div>
-                <Link to="/" className="btn btn-ghost normal-case text-xl">
+                <img className='w-8 h-8 ml-4' src={logo} alt="" />
+                <Link to="/" className="btn btn-ghost normal-case text-xl ml-[-10px]">
                     <span className='text-red-600'>
-                        <span className='font-bold text-[26px]'>D</span>ONATE</span> 
+                        <span className='font-bold text-[26px]'>D</span>onate</span> 
                     <span className='text-blue-600'>
-                        <span className='font-bold text-[26px]'>F</span>REELY
+                        <span className='font-bold text-[26px]'>F</span>reely
                     </span>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 {/* For large device menu*/}
-                <ul className="menu menu-horizontal px-1 text-[18px]">
+                <ul className="menu menu-horizontal px-1 text-[18px] text-white">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/fundraisers">Browse Fundraisers</Link></li>
                     <li tabIndex={0}>
@@ -67,7 +69,7 @@ const Navbar = () => {
                     <Link to="/donateForm" className="bg-white outline outline-green-600 px-4 py-2 rounded-md mr-5">
                         <span className='font-bold text-green-600 uppercase'>Donate</span>
                     </Link>
-                    <Link to="/login" className='btn btn-ghost mr-5 text-[19px]'>LogIn</Link>
+                    <Link to="/login" className='btn btn-ghost mr-5 text-[19px] text-white'>LogIn</Link>
                 </div>
             </div>
         </div>

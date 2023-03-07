@@ -6,9 +6,9 @@ import DonatePlan from '../DonatePlan/DonatePlan';
 import DonationNow from '../DonationNow/DonationNow';
 import GiveThems from '../GiveThems/GiveThems';
 import MVC from '../MVC/MVC';
-import RegularDoners from '../Testimonial/Testimonials';
 import SuccessStories from '../SuccessStories/SuccessStories';
 import Support from '../SupportHumans/Support';
+import Testimonials from '../Testimonial/Testimonials';
 
 const MainHome = () => {
     return (
@@ -20,7 +20,7 @@ const MainHome = () => {
             <GiveThems />
             <MVC />
             <DonateFreely />
-            <RegularDoners />
+            <Testimonials />
             <SuccessStories />
             <ContactUs />
         </div>
