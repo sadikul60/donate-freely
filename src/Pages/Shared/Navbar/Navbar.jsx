@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from "../../../assets/logo/donationLogo.png"
+import { AuthContext } from '../../../Contexts/AuthProvider';
 
 const Navbar = () => {
+    const {loading, user} = useContext(AuthContext);
+    console.log(user)
     return (
         <div className="navbar bg-black">
             <div className="navbar-start relative py-2">
