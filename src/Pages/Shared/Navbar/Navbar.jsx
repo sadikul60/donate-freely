@@ -6,6 +6,7 @@ import Loader from '../../../components/Loader/Loader';
 import { AuthContext } from '../../../Contexts/AuthProvider';
 import profileImg from "../../../assets/icon/blnkPP.png"
 import { toast } from 'react-toastify';
+import UserProfile from '../../UserProfile/UserProfile';
 
 const Navbar = () => {
     const {loading, user, logOut} = useContext(AuthContext);
@@ -91,6 +92,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end hidden lg:block">
+                {/* for large device menu  */}
                 <div className='flex justify-center items-center'>
                     <Link className="bg-white flex items-center outline outline-green-600 px-4 py-1 mr-5  rounded-md">
                         <FaWhatsapp className='w-7 h-7 text-green-600 mr-1' />
@@ -100,7 +102,7 @@ const Navbar = () => {
                         <span className='font-bold text-green-600 uppercase'>Donate</span>
                     </Link>
                     {
-                        user ? <img className='w-12 h-12  rounded-full hover:cursor-default ml-0' src={user?.photoURL} alt="" />
+                        user ? <UserProfile></UserProfile>
                         :
                         <Link to="/login" className='btn btn-ghost mr-5 text-[19px] text-white'>LogIn</Link>
                     }

@@ -7,6 +7,7 @@ import Fundraisers from "../../Pages/MainFundraisers/Fundraisers/Fundraisers";
 import MainFundraisers from "../../Pages/MainFundraisers/MainFundraisers/MainFundraisers";
 import Medical from "../../Pages/MainFundraisers/Medical/Medical";
 import Register from "../../Pages/Register/Register";
+import UserProfile from "../../Pages/UserProfile/UserProfile";
 
 
 
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
                 path: "/donateForm",
                 element: <DonateNowForm />
             },
+            // {
+            //     path: "/userProfile",
+            //     element: <UserProfile />
+            // },
             {
                 path: "/fundraisers",
                 element: <MainFundraisers />,
