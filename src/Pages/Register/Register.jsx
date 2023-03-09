@@ -68,7 +68,8 @@ const Register = () => {
         <section className='bg-paper flex items-center justify-center py-14'>
             <div className='w-11/12 md:w-6/12 xl:w-4/12 p-6 bg-green-100 shadow-2xl'>
                 <div>
-                    <h1 className='text-3xl font-bold text-center mb-5'>Register Now!</h1>
+                <h2 className='text-3xl font-bold text-center'>Register Now</h2>
+                    <div className='border-2 border-red-600 w-16 mx-auto mb-8 mt-2 rounded'></div>
                     <img src={profileImg ? profileImg : blankPP} className="w-32 h-32 rounded-full bg-white p-2 mx-auto" alt="" />
                 </div>
                 <form onSubmit={handleSubmit(handleRegister)} 
@@ -103,7 +104,7 @@ const Register = () => {
                     </div>
                 </form>
                 <div className='mb-8'>
-                    <h4 className='text-[17px] mb-3 text-center'>Already have an Account? <Link to="/login" className='text-red-600 font-semibold link-hover'>Please Login</Link></h4>
+                    <h4 className='text-[17px] mb-3'>Already have an Account? <Link to="/login" className='text-red-600 font-semibold link-hover'>Please Login</Link></h4>
                 </div>
             </div>
         </section>
